@@ -1,32 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product</title>
     <style>
       * {
         margin: 0;
         padding: 0;
       }
+      li {
+        list-style: none;
+      }
+
+      body {
+        background-color: #f0f0f0;
+      }
+
+      #footer-nav {
+        padding: 0 16px;
+      }
+      .list-container {
+        border-bottom: 1px solid #aaa;
+        padding: 8px 0;
+      }
       .list-container > label {
         display: block;
+        width: 100%;
+        padding: 4px 0;
+        /* overflow: hidden; */
       }
-      .product-list {
+      .list-container > input {
+        display: none;
       }
+
+      .list-container > input:checked + .product-list-container {
+        height: 0px;
+        overflow: hidden;
+      }
+
+      .main-product-list > a {
+        display: block;
+        padding: 4px;
+        color: #444;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      /* .main-list-container {
+        margin: 16px 32px;
+      } */
+      /* .list-container {
+        margin-left: 10px;
+        padding: 6px;
+        border-bottom: 2px solid #b5b8b6;
+      } */
+      /* .main-product-list {
+        padding-bottom: 10px;
+      } */
     </style>
   </head>
   <body>
-    <ul class="main-list-container">
-      <li class="list-container">
-        <label for="checking">쇼핑하고 배우기</label>
-        <input type="checkbox" name="" id="checking" />
-        <ul class="product-list-container">
-          <li class="product-list">ipad</li>
-          <li class="product-list">iphone</li>
-        </ul>
-      </li>
-    </ul>
+    <section id="footer-nav">
+      <ul class="main-list-container">
+        <li class="list-container">
+          <label for="checking">Shop and Learn</label>
+          <input type="checkbox" name="" id="checking" checked/>
+          <ul class="product-list-container">
+            <li class="main-product-list">
+              <a href="#">Store</a>
+            </li>
+            <li class="main-product-list">
+              <a href="#">Mac</a>
+            </li>
+            <li class="main-product-list">
+              <a href="#">iPad</a>
+            </li>
+            <li class="main-product-list">
+              <a href="#">iPhone</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
