@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+        border: 2px solid black;
+        justify-content: space-between;
+        /* justify-content: center; */
+        /* align-items: center; */
+        box-sizing: border-box;
+      }
+
+      h1 {
+        box-sizing: border-box;
+        background-color: yellow;
+        width: 196px;
+        height: 96px;
+        text-align: center;
+        padding: 25px 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+      }
+      .main {
+        display: flex;
+        width: 1000px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        /* border: 2px solid black; */
+      }
+
+      article {
+        width: 700px;
+        margin-bottom: 20px;
+        /* box-sizing: border-box; */
+        border: 2px solid black;
+      }
+
+      h2 {
+        background-color: antiquewhite;
+      }
+
+      aside {
+        /* box-sizing: border-box; */
+        margin-left: 20px;
+        border: 2px solid black;
+      }
+
+      footer {
+        width: 1000px;
+        height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WEB-logo</h1>
+      <nav>
+        <ul>
+          <li>menu-1</li>
+          <li>menu-1</li>
+          <li>menu-1</li>
+          <li>menu-1</li>
+        </ul>
+        <ul>
+          <li>menu-2</li>
+          <li>menu-2</li>
+          <li>menu-2</li>
+          <li>menu-2</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <section>
+        <article>
+          <h2>Main Article</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae,
+            vitae. Enim dolor dolores itaque corrupti quas quidem voluptates
+            autem animi facere at saepe vero velit voluptatem commodi, rem nam
+            facilis.
+          </p>
+        </article>
+        <article>
+          <h2>Main Article</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae,
+            vitae. Enim dolor dolores itaque corrupti quas quidem voluptates
+            autem animi facere at saepe vero velit voluptatem commodi, rem nam
+            facilis.
+          </p>
+        </article>
+        <article>
+          <h2>Main Article</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae,
+            vitae. Enim dolor dolores itaque corrupti quas quidem voluptates
+            autem animi facere at saepe vero velit voluptatem commodi, rem nam
+            facilis.
+          </p>
+        </article>
+      </section>
+      <aside>
+        <h2>Right aside</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente
+          labore ipsam nulla voluptate pariatur illo eveniet et, quo, cupiditate
+          laboriosam iste expedita inventore velit! Sunt sit quam vitae
+          accusamus.
+        </p>
+        <label for="email">Mail</label>
+        <input type="text" id="email" />
+        <button>mailto</button>
+        <div class="banner">
+          <h3>TEXT</h3>
+          <p>banner</p>
+        </div>
+      </aside>
+    </div>
+    <footer>HTML5 COPYRIGHT</footer>
+  </body>
+</html>
