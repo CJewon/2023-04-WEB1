@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .update-container {
+        width: 800px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        padding: 20px 0;
+      }
+      table {
+        margin: 10px;
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+
+      th {
+        border: 1px solid black;
+        text-align: center;
+        letter-spacing: 10px;
+        background-color: dimgray;
+      }
+
+      td {
+        width: 200px;
+        height: 20px;
+        border-bottom: 1px dotted black;
+        border-left: 1px solid black;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+
+      .list-container {
+        width: 720px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+      }
+
+      p {
+        padding-left: 20px;
+      }
+
+      #text-box {
+        width: 202px;
+        height: 24px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+
+        /* border-bottom-style: dotted; */
+      }
+
+      #anything-text {
+        width: 500px;
+        height: 20px;
+        border-style: dotted;
+        border-color: darkslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="update-container">
+      <ul>
+        <li>
+          <div class="list-container">
+            <label for="create">1. 신규계좌 개설</label>
+            <input type="checkbox" name="" id="create" />
+          </div>
+          <table>
+            <colgroup>
+              <col style="width: 300px" />
+              <col style="width: 150px" />
+              <col style="width: 200px" />
+            </colgroup>
+            <tr>
+              <th>상품명</th>
+              <th>계좌수</th>
+              <th>비고</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+              <td><input type="text" name="" id="text-box" /></td>
+            </tr>
+          </table>
+        </li>
+        <li>
+          <div class="list-container">
+            <label for="pay">2. 예금의 지급 또는 해지</label>
+            <input type="checkbox" name="" id="pay" />
+          </div>
+        </li>
+        <li>
+          <div class="list-container">
+            <label for="anything">3. 기타</label>
+            <input type="text" name="" id="anything-text" />
+            <input type="checkbox" value="" id="anything" />
+          </div>
+        </li>
+      </ul>
+      <p>▶위임사항은 □에 V표시하여 주십시오</p>
+    </div>
+  </body>
+</html>
