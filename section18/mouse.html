@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .mouse_background {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        border: 2px solid white;
+      }
+
+      .mouse {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: mouse_mov 3s ease infinite;
+      }
+
+      .shape {
+        width: 50px;
+        height: 100px;
+        border: 2px solid white;
+        border-radius: 100px;
+      }
+
+      .wheel {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        /* animation: ; */
+      }
+
+      @keyframes mouse_mov {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0);
+        }
+
+        25% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(100%);
+        }
+
+        75% {
+          transform: translate(-50%, -50%) translateY(50px);
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mouse_background">
+      <div class="mouse shape">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </body>
+</html>
