@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .back_con {
+        width: 700px;
+        height: 800px;
+        border: 2px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .squ_con1 {
+        width: 150px;
+        height: 500px;
+        position: absolute;
+        top: calc(50% - 250px);
+        left: calc(50% - 150px);
+        background-color: aqua;
+        transform-origin: 50% calc(50% - 150px);
+        transform: translate(-50%, 0);
+        animation: write_mov1 1s linear infinite;
+      }
+
+      .squ_con2 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 75px);
+        background-color: aqua;
+        animation: write_mov2 1s linear infinite;
+        animation-delay: 1s;
+        transform-origin: 50% calc(50% - 150px);
+        transform: translate(0, -50%);
+      }
+
+      .squ_con3 {
+        width: 150px;
+        height: 500px;
+        position: absolute;
+        top: calc(50% - 250px);
+        left: calc(50% + 150px);
+        background-color: aqua;
+        animation: write_mov3 1s linear infinite;
+        animation-delay: 2s;
+        transform-origin: 50% calc(50% - 150px);
+        transform: translate(-50%, 0);
+      }
+
+      @keyframes write_mov1 {
+        0% {
+          transform-origin: 50% calc(50% - 150px);
+          transform: translate(-50%, 0);
+          height: 0;
+        }
+
+        100% {
+          transform-origin: 50% calc(50% - 150px);
+          transform: translate(-50%, 0);
+        }
+      }
+
+      @keyframes write_mov2 {
+        0% {
+          transform-origin: 50% calc(50% - 150px);
+          transform: translate(0, -50%);
+        }
+
+        100% {
+          transform-origin: 50% calc(50% - 150px);
+          transform: translate(0, -50%);
+        }
+      }
+
+      @keyframes write_mov3 {
+        0% {
+          transform-origin: 50% calc(50% - 150px);
+          transform: translate(-50%, 0);
+        }
+
+        100% {
+          transform-origin: 50% calc(50% - 150px);
+          transform: translate(-50%, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back_con">
+      <div class="squ_con1"></div>
+      <div class="squ_con2"></div>
+      <div class="squ_con3"></div>
+    </div>
+  </body>
+</html>
