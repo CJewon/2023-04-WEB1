@@ -15,13 +15,21 @@
       header {
         display: flex;
         justify-content: space-between;
-        padding: 15px 30px;
-        background-color: pink;
+        align-items: center;
+        padding: 20px 30px;
       }
 
       header > figure > img {
-        width: 124px;
-        height: 20px;
+        width: 144px;
+        height: 25px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        text-align: center;
       }
 
       .nav_wrapper {
@@ -30,11 +38,13 @@
 
       .nav_menubar {
         display: flex;
-        gap: 32px;
+        gap: 40px;
       }
 
-      a {
-        font-size: 13px;
+      .nav_menubar_list > a {
+        font-size: 16px;
+        color: rgb(87, 181, 243);
+        font-weight: 1000;
       }
 
       .background_container {
@@ -46,26 +56,144 @@
 
       .background_wrapper {
         display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+      }
+
+      .input_search {
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+
+      .input_container {
+        position: relative;
+      }
+
+      .search_iconb {
+        position: absolute;
+        top: 40%;
+        left: 2%;
+      }
+
+      .explain_writing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 80px 0;
+      }
+
+      h2 {
+        padding: 20px 0;
+        font-size: 30px;
+        font-weight: bold;
+        color: #302f2f;
+      }
+
+      .explain_writing > p {
+        font-size: 20px;
+        padding: 5px 10px;
+        font-weight: 400;
+        color: #302f2f;
+      }
+
+      .explain_writing > p > a {
+        text-decoration: none;
+        color: rgb(87, 181, 243);
+      }
+
+      .help_icon_wrapper {
+        display: flex;
+        padding: 0 25px;
+        gap: 24px;
+
+        align-items: center;
+      }
+
+      .help_icon {
+        border: 1px solid rgb(180, 170, 170, 0.4);
+        border-radius: 10px;
+      }
+
+      .icon_background {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        padding: 25px;
+        width: 175px;
+        height: 200px;
+      }
+
+      .icon_title {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .icon_title > img {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 10px;
+      }
+
+      .icon_background > p {
+        font-size: 13px;
+        color: rgb(180, 170, 170);
+      }
+
+      .anything_help_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .anything_help_h > h2 {
+        padding-top: 70px;
+      }
+
+      .anything_help_wrapper {
+        display: flex;
+        gap: 24px;
+      }
+
+      .anything_help {
+        border: 1px solid rgb(180, 170, 170, 0.4);
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
     <header>
       <figure>
-        <img
-          src="../discord_web/discord_img/cc59daa07820943e943c2fc283b9079d7003ff76.svg"
-          alt="discord"
-        />
+        <a href="#">
+          <img
+            src="../discord_web/discord_img/cc59daa07820943e943c2fc283b9079d7003ff76.svg"
+            alt="discord"
+          />
+        </a>
       </figure>
       <div class="nav_wrapper">
         <ul class="nav_menubar">
-          <li><a href="#">피드백</a></li>
-          <li><a href="#">한국어</a></li>
-          <li><a href="#">문의 등록</a></li>
-          <li><a href="#">로그인</a></li>
+          <li class="nav_menubar_list"><a href="#">피드백</a></li>
+          <li class="nav_menubar_list"><a href="#">한국어</a></li>
+          <li class="nav_menubar_list"><a href="#">문의 등록</a></li>
+          <li class="nav_menubar_list"><a href="#">로그인</a></li>
         </ul>
       </div>
     </header>
@@ -73,93 +201,199 @@
       <div class="background_container">
         <div class="background_wrapper">
           <h1>고객 지원 센터</h1>
-          <input type="search" name="" id="" placeholder="검색" />
+          <div class="input_container">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="검색"
+              class="input_search"
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              focusable="false"
+              viewBox="0 0 12 12"
+              class="search_iconb"
+              aria-hidden="true"
+            >
+              <circle
+                cx="4.5"
+                cy="4.5"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+              ></circle>
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                d="M11 11L7.5 7.5"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
     <div class="explain_writing">
-      <h1>도움이 필요하신가요? 저희가 도와드리겠습니다.</h1>
-      <span>계정 설정부터 승인까지 Discord와 관련된 모든 것을 문의하세요.</span>
-      <span>
+      <h2>도움이 필요하신가요? 저희가 도와드리겠습니다.</h2>
+      <p>계정 설정부터 승인까지 Discord와 관련된 모든 것을 문의하세요.</p>
+      <p>
         Discord를 시작한지 얼마 안되어 팁을 찾고 계신가요? 그렇다면, 저희의
         <a href="#">초보자를 위한 가이드를 확인해 보세요!</a>
-      </span>
+      </p>
     </div>
     <div class="help_icon_container">
       <ul class="help_icon_wrapper">
         <li class="help_icon">
-          <a href="#">
-            <h2>공지 사항</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/1bd76d1fd516f8dacd3c7422a8ceb929ef2502d9.svg"
+                alt=""
+              />
+              <h3>공지 사항</h3>
+            </div>
             <p>들어보세요. 무언가 심상치 않은 일이 벌어지고 있습니다.</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>Discord 인터페이스</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/8c6c6469bdca01e05d2870e6d373c1d80e290255.svg"
+                alt=""
+              />
+              <h3>Discord 인터페이스</h3>
+            </div>
             <p>이 버튼은 무엇인가요?!</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>계정 설정</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/3da6524afd9979b44c5f6ceaf19e812c204ad74e.svg"
+                alt=""
+              />
+              <h3>계정 설정</h3>
+            </div>
             <p>당신도 당신의 계정도 특별한 눈송이입니다.</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>시작하기</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/35f736c34c81d953054d0c1e202f71c8094f8fbf.svg"
+                alt=""
+              />
+              <h3>시작하기</h3>
+            </div>
             <p>첫 단추를 제대로 끼워야 합니다!</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>서버 설정</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/33f0bd0c3a2c58763cb0404a18bb38da48fc289d.svg"
+                alt=""
+              />
+              <h3>서버 설정</h3>
+            </div>
             <p>실내 장식 만큼 재미있는 것.</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>커뮤니티 프로그램</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/dd93acfbff40b1ea53f2b4e8fa51ac142486bd13.svg"
+                alt=""
+              />
+              <h3>커뮤니티 프로그램</h3>
+            </div>
             <p>HypeSquaders를 위한 광고, 파트너를 위한 파티</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>Nitro</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/d7415f17818f8caabf5d98099171b227201a3e41.svg"
+                alt=""
+              />
+              <h3>Nitro</h3>
+            </div>
             <p>쓰러질 때까지 쇼핑하시면 안 돼요! 저희가 도와드릴께요.</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>청구서</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/e5bd3c63530b0a8e55b406528f2fd9d61b8bd923.svg"
+                alt=""
+              />
+              <h3>청구서</h3>
+            </div>
             <p>은행 계좌 잔액을 보는 기분.</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>신뢰 & 보안</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/6f28e83ed890200c649526472dec1e8f593fe1dd.svg"
+                alt=""
+              />
+              <h3>신뢰 & 보안</h3>
+            </div>
             <p>안전하고 건전하게</p>
           </a>
         </li>
         <li class="help_icon">
-          <a href="#">
-            <h2>자주 묻는 질문</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/1883060a5132c470528a20c1cfe42976e7c167ca.svg"
+                alt=""
+              />
+              <h3>자주 묻는 질문</h3>
+            </div>
             <p>스스로 해결해 보아요.</p>
           </a>
         </li>
       </ul>
     </div>
     <div class="anything_help_container">
+      <div class="anything_help_h">
+        <h2>도움을 받을 수 있는 다른 방법</h2>
+      </div>
       <ul class="anything_help_wrapper">
-        <li class="anything-help">
-          <a href="#">
-            <h2>게임 개발자</h2>
+        <li class="anything_help">
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/66a7b3885ab7dccb734dd94b9ed3408fc410d30c.svg"
+                alt=""
+              />
+              <h3>게임 개발자</h3>
+            </div>
             <p>Discord의 API와 SDK를 이용한 봇, 앱, 게임 개발 지원의 집!</p>
           </a>
         </li>
         <li class="anything_help">
-          <a href="#">
-            <h2>Twitter</h2>
+          <a href="#" class="icon_background">
+            <div class="icon_title">
+              <img
+                src="../discord_web/discord_img/ceb4c1d378277188ab383a50029b43e5d3b1581b.svg"
+                alt=""
+              />
+              <h3>Twitter</h3>
+            </div>
             <p>질문이 있으신가요? 저희에게 트윗을 보내주세요!</p>
           </a>
         </li>
@@ -167,7 +401,7 @@
     </div>
     <div class="detail_help_container">
       <div class="detail_help">
-        <a href="#">자세히</a>
+        <a href="#" class="more_help">자세히</a>
       </div>
     </div>
     <div class="deskop_phone_background_img">
@@ -211,3 +445,6 @@
     </footer>
   </body>
 </html>
+<!-- 질문  -->
+<!--  p태그가 화면이 줄였을때 가운데 정렬이 안되서 그런지 줄바꿈이 되었을때 좌측부터 시작한다 어떻게 해결해야하나?  -->
+<!--  icon_background가 12개인데 css로 하나하나 다 해줘야하는건가?-->
