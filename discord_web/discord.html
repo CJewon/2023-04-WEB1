@@ -16,12 +16,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 30px;
+        padding: 20px 10%;
       }
 
       header > figure > img {
         width: 144px;
-        height: 25px;
+        height: 30px;
       }
 
       a {
@@ -45,6 +45,11 @@
         font-size: 16px;
         color: rgb(87, 181, 243);
         font-weight: 1000;
+      }
+
+      .nav_menubar > a {
+        visibility: hidden;
+        color: rgb(87, 181, 243);
       }
 
       .background_container {
@@ -120,7 +125,9 @@
         display: flex;
         padding: 0 25px;
         gap: 24px;
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
       }
 
@@ -136,6 +143,10 @@
         padding: 25px;
         width: 175px;
         height: 200px;
+      }
+
+      h3 {
+        color: rgb(87, 181, 243);
       }
 
       .icon_title {
@@ -170,11 +181,92 @@
       .anything_help_wrapper {
         display: flex;
         gap: 24px;
+        padding: 40px 0;
       }
 
       .anything_help {
         border: 1px solid rgb(180, 170, 170, 0.4);
         border-radius: 10px;
+      }
+
+      footer {
+        background-color: black;
+      }
+
+      .detail_help_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .detail_help {
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(88, 175, 88);
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 50px 0;
+      }
+
+      .detail_help > a {
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+      }
+
+      .detail_help_container > figure > img {
+        width: 900px;
+      }
+
+      .footer_menubar_container {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        padding: 40px 0;
+      }
+
+      .footer_menubar {
+        padding-bottom: 30px;
+      }
+
+      .footer_menubar > a {
+        color: white;
+      }
+
+      .customer_serive_button {
+      }
+
+      .customer_serive_button > button {
+        position: fixed;
+        z-index: 0;
+      }
+
+      @media screen and (max-width: 767px) {
+        .nav_menubar > li:nth-child(1) {
+          visibility: hidden;
+        }
+
+        .nav_menubar > li:nth-child(2) {
+          visibility: hidden;
+        }
+
+        .nav_menubar > li:nth-child(3) {
+          visibility: hidden;
+        }
+        .icon_menu {
+          visibility: visible;
+        }
+        .footer_menubar_container {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .footer_menubar_container > figure {
+          padding-bottom: 20px;
+        }
       }
     </style>
   </head>
@@ -193,6 +285,22 @@
           <li class="nav_menubar_list"><a href="#">피드백</a></li>
           <li class="nav_menubar_list"><a href="#">한국어</a></li>
           <li class="nav_menubar_list"><a href="#">문의 등록</a></li>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              focusable="false"
+              viewBox="0 0 16 16"
+              class="icon_menu"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                d="M1.5 3.5h13m-13 4h13m-13 4h13"
+              ></path></svg
+          ></a>
           <li class="nav_menubar_list"><a href="#">로그인</a></li>
         </ul>
       </div>
@@ -399,27 +507,44 @@
         </li>
       </ul>
     </div>
-    <div class="detail_help_container">
-      <div class="detail_help">
-        <a href="#" class="more_help">자세히</a>
-      </div>
-    </div>
-    <div class="deskop_phone_background_img">
-      <figure>
-        <img
-          src="../discord_web/discord_img/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png"
-          alt=""
-        />
-      </figure>
-    </div>
     <footer>
-      <figure>
+      <div class="detail_help_container">
+        <div class="detail_help">
+          <a href="#" class="more_help"><p>자세히</p></a>
+        </div>
+        <figure>
+          <img
+            src="../discord_web/discord_img/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png"
+            alt=""
+          />
+        </figure>
         <img
-          src="../discord_web/discord_img/cc59daa07820943e943c2fc283b9079d7003ff76.svg"
-          alt=""
+          src="//theme.zdassets.com/theme_assets/678183/faa4afbc252ccaa8d959cedf65f6e59b4d75b167.svg"
         />
-      </figure>
+        <img
+          src="//theme.zdassets.com/theme_assets/678183/fc0920a1ef72122cbcd69849ff4431fc8095a11b.svg"
+        />
+        <img
+          src="//theme.zdassets.com/theme_assets/678183/e2b9fb24a30f282977edd9c280820029e767b160.svg"
+        />
+        <img
+          src="//theme.zdassets.com/theme_assets/678183/47100981c9f8e640b597c228528f303b5b5ae4ac.svg"
+        />
+        <img
+          src="//theme.zdassets.com/theme_assets/678183/22df88a591db1baf678cb7435a7ec52317daba6f.svg"
+        />
+      </div>
+
       <div class="footer_menubar_container">
+        <figure>
+          <img
+            src="//theme.zdassets.com/theme_assets/678183/2a944f43170f2222e136854fe9c9e2c9ea6a1971.svg"
+            alt="Discord"
+            itemprop="logo"
+            width="130"
+            height="36"
+          />
+        </figure>
         <ul class="footer_menubar_wrapper">
           <li class="footer_menubar"><a href="#">다운로드</a></li>
           <li class="footer_menubar"><a href="#">지원</a></li>
@@ -445,6 +570,3 @@
     </footer>
   </body>
 </html>
-<!-- 질문  -->
-<!--  p태그가 화면이 줄였을때 가운데 정렬이 안되서 그런지 줄바꿈이 되었을때 좌측부터 시작한다 어떻게 해결해야하나?  -->
-<!--  icon_background가 12개인데 css로 하나하나 다 해줘야하는건가?-->
