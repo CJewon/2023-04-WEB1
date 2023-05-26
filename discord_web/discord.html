@@ -4,289 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/discord.css" />
     <title>Discord</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 10%;
-      }
-
-      header > figure > img {
-        width: 144px;
-        height: 30px;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      p {
-        text-align: center;
-      }
-
-      .nav_wrapper {
-        padding: 0 25px;
-      }
-
-      .nav_menubar {
-        display: flex;
-        gap: 40px;
-      }
-
-      .nav_menubar_list > a {
-        font-size: 16px;
-        color: rgb(87, 181, 243);
-        font-weight: 1000;
-      }
-
-      .nav_menubar > a {
-        visibility: hidden;
-        color: rgb(87, 181, 243);
-      }
-
-      .background_container {
-        height: 320px;
-        background-image: url(../discord_web/discord_img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
-        background-size: cover;
-        background-position: center;
-      }
-
-      .background_wrapper {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        position: relative;
-      }
-
-      h1 {
-        font-size: 48px;
-        color: white;
-        font-weight: bold;
-      }
-
-      .input_search {
-        width: 600px;
-        height: 40px;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-      }
-
-      .input_container {
-        position: relative;
-      }
-
-      .search_iconb {
-        position: absolute;
-        top: 40%;
-        left: 2%;
-      }
-
-      .explain_writing {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100px;
-        padding: 80px 0;
-      }
-
-      h2 {
-        padding: 20px 0;
-        font-size: 30px;
-        font-weight: bold;
-        color: #302f2f;
-      }
-
-      .explain_writing > p {
-        font-size: 20px;
-        padding: 5px 10px;
-        font-weight: 400;
-        color: #302f2f;
-      }
-
-      .explain_writing > p > a {
-        text-decoration: none;
-        color: rgb(87, 181, 243);
-      }
-
-      .help_icon_wrapper {
-        display: flex;
-        padding: 0 25px;
-        gap: 24px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .help_icon {
-        border: 1px solid rgb(180, 170, 170, 0.4);
-        border-radius: 10px;
-      }
-
-      .icon_background {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 25px;
-        width: 175px;
-        height: 200px;
-      }
-
-      h3 {
-        color: rgb(87, 181, 243);
-      }
-
-      .icon_title {
-        width: 200px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .icon_title > img {
-        width: 100px;
-        height: 100px;
-        padding-bottom: 10px;
-      }
-
-      .icon_background > p {
-        font-size: 13px;
-        color: rgb(180, 170, 170);
-      }
-
-      .anything_help_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .anything_help_h > h2 {
-        padding-top: 70px;
-      }
-
-      .anything_help_wrapper {
-        display: flex;
-        gap: 24px;
-        padding: 40px 0;
-      }
-
-      .anything_help {
-        border: 1px solid rgb(180, 170, 170, 0.4);
-        border-radius: 10px;
-      }
-
-      footer {
-        background-color: black;
-      }
-
-      .detail_help_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .detail_help {
-        border: 1px solid black;
-        border-radius: 20px;
-        background-color: rgb(88, 175, 88);
-        width: 250px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        margin: 50px 0;
-      }
-
-      .detail_help > a {
-        font-size: 15px;
-        color: white;
-        font-weight: bold;
-      }
-
-      .detail_help_container > figure > img {
-        width: 900px;
-      }
-
-      .footer_menubar_container {
-        display: flex;
-        justify-content: center;
-        gap: 150px;
-        padding: 40px 0;
-      }
-
-      .footer_menubar {
-<<<<<<< HEAD
-        padding-bottom: 20px;
-      }
-
-      .footer_menubar > a {
-        font-size: 13px;
-        color: white;
-      }
-
-=======
-        padding-bottom: 30px;
-      }
-
-      .footer_menubar > a {
-        color: white;
-      }
-
-      .customer_serive_button {
-      }
-
-      .customer_serive_button > button {
-        position: fixed;
-        z-index: 0;
-      }
-
->>>>>>> 8859bd72c9f33cd37cc5b647f628940b7ece7a00
-      @media screen and (max-width: 767px) {
-        .nav_menubar > li:nth-child(1) {
-          visibility: hidden;
-        }
-
-        .nav_menubar > li:nth-child(2) {
-          visibility: hidden;
-        }
-
-        .nav_menubar > li:nth-child(3) {
-          visibility: hidden;
-        }
-        .icon_menu {
-          visibility: visible;
-        }
-        .footer_menubar_container {
-          display: block;
-          margin: 0 auto;
-          text-align: center;
-        }
-        .footer_menubar_container > figure {
-          padding-bottom: 20px;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
       <figure>
         <a href="#">
           <img
-            src="../discord_web/discord_img/cc59daa07820943e943c2fc283b9079d7003ff76.svg"
+            src="discord_img/cc59daa07820943e943c2fc283b9079d7003ff76.svg"
             alt="discord"
           />
         </a>
@@ -296,8 +23,8 @@
           <li class="nav_menubar_list"><a href="#">피드백</a></li>
           <li class="nav_menubar_list"><a href="#">한국어</a></li>
           <li class="nav_menubar_list"><a href="#">문의 등록</a></li>
-          <a href="#"
-            ><svg
+          <a href="#">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -310,54 +37,47 @@
                 stroke="currentColor"
                 stroke-linecap="round"
                 d="M1.5 3.5h13m-13 4h13m-13 4h13"
-<<<<<<< HEAD
               ></path>
             </svg>
           </a>
-=======
-              ></path></svg
-          ></a>
->>>>>>> 8859bd72c9f33cd37cc5b647f628940b7ece7a00
           <li class="nav_menubar_list"><a href="#">로그인</a></li>
         </ul>
       </div>
     </header>
     <section>
-      <div class="background_container">
-        <div class="background_wrapper">
-          <h1>고객 지원 센터</h1>
-          <div class="input_container">
-            <input
-              type="search"
-              name=""
-              id=""
-              placeholder="검색"
-              class="input_search"
-            />
+      <div class="background_wrapper">
+        <h1>고객 지원 센터</h1>
+        <div class="input_container">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="검색"
+            class="input_search"
+          />
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              focusable="false"
-              viewBox="0 0 12 12"
-              class="search_iconb"
-              aria-hidden="true"
-            >
-              <circle
-                cx="4.5"
-                cy="4.5"
-                r="4"
-                fill="none"
-                stroke="currentColor"
-              ></circle>
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                d="M11 11L7.5 7.5"
-              ></path>
-            </svg>
-          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            focusable="false"
+            viewBox="0 0 12 12"
+            class="search_iconb"
+            aria-hidden="true"
+          >
+            <circle
+              cx="4.5"
+              cy="4.5"
+              r="4"
+              fill="none"
+              stroke="currentColor"
+            ></circle>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              d="M11 11L7.5 7.5"
+            ></path>
+          </svg>
         </div>
       </div>
     </section>
@@ -375,7 +95,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/1bd76d1fd516f8dacd3c7422a8ceb929ef2502d9.svg"
+                src="discord_img/1bd76d1fd516f8dacd3c7422a8ceb929ef2502d9.svg"
                 alt=""
               />
               <h3>공지 사항</h3>
@@ -387,7 +107,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/8c6c6469bdca01e05d2870e6d373c1d80e290255.svg"
+                src="discord_img/8c6c6469bdca01e05d2870e6d373c1d80e290255.svg"
                 alt=""
               />
               <h3>Discord 인터페이스</h3>
@@ -399,7 +119,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/3da6524afd9979b44c5f6ceaf19e812c204ad74e.svg"
+                src="discord_img/3da6524afd9979b44c5f6ceaf19e812c204ad74e.svg"
                 alt=""
               />
               <h3>계정 설정</h3>
@@ -411,7 +131,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/35f736c34c81d953054d0c1e202f71c8094f8fbf.svg"
+                src="discord_img/35f736c34c81d953054d0c1e202f71c8094f8fbf.svg"
                 alt=""
               />
               <h3>시작하기</h3>
@@ -423,7 +143,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/33f0bd0c3a2c58763cb0404a18bb38da48fc289d.svg"
+                src="discord_img/33f0bd0c3a2c58763cb0404a18bb38da48fc289d.svg"
                 alt=""
               />
               <h3>서버 설정</h3>
@@ -435,7 +155,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/dd93acfbff40b1ea53f2b4e8fa51ac142486bd13.svg"
+                src="discord_img/dd93acfbff40b1ea53f2b4e8fa51ac142486bd13.svg"
                 alt=""
               />
               <h3>커뮤니티 프로그램</h3>
@@ -447,7 +167,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/d7415f17818f8caabf5d98099171b227201a3e41.svg"
+                src="discord_img/d7415f17818f8caabf5d98099171b227201a3e41.svg"
                 alt=""
               />
               <h3>Nitro</h3>
@@ -459,7 +179,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/e5bd3c63530b0a8e55b406528f2fd9d61b8bd923.svg"
+                src="discord_img/e5bd3c63530b0a8e55b406528f2fd9d61b8bd923.svg"
                 alt=""
               />
               <h3>청구서</h3>
@@ -471,7 +191,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/6f28e83ed890200c649526472dec1e8f593fe1dd.svg"
+                src="discord_img/6f28e83ed890200c649526472dec1e8f593fe1dd.svg"
                 alt=""
               />
               <h3>신뢰 & 보안</h3>
@@ -483,7 +203,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/1883060a5132c470528a20c1cfe42976e7c167ca.svg"
+                src="discord_img/1883060a5132c470528a20c1cfe42976e7c167ca.svg"
                 alt=""
               />
               <h3>자주 묻는 질문</h3>
@@ -502,7 +222,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/66a7b3885ab7dccb734dd94b9ed3408fc410d30c.svg"
+                src="discord_img/66a7b3885ab7dccb734dd94b9ed3408fc410d30c.svg"
                 alt=""
               />
               <h3>게임 개발자</h3>
@@ -514,7 +234,7 @@
           <a href="#" class="icon_background">
             <div class="icon_title">
               <img
-                src="../discord_web/discord_img/ceb4c1d378277188ab383a50029b43e5d3b1581b.svg"
+                src="discord_img/ceb4c1d378277188ab383a50029b43e5d3b1581b.svg"
                 alt=""
               />
               <h3>Twitter</h3>
@@ -531,7 +251,7 @@
         </div>
         <figure>
           <img
-            src="../discord_web/discord_img/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png"
+            src="discord_img/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png"
             alt=""
           />
         </figure>
@@ -581,9 +301,9 @@
           <li class="footer_menubar"><a href="#">조건 & 개인 정보 보호</a></li>
         </ul>
       </div>
-      <div class="customer_serive_buttom">
-        <button>☏ 고객센터</button>
-      </div>
     </footer>
+    <div class="customer_serive_buttom">
+      <button>☏ 고객센터</button>
+    </div>
   </body>
 </html>
