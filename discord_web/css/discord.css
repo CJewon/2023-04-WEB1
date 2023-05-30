@@ -234,6 +234,10 @@ footer {
   color: white;
 }
 
+.customer_service_buttom {
+  position: fixed;
+}
+
 @media screen and (max-width: 767px) {
   .nav_menubar_list {
     display: none;
