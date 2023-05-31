@@ -1,8 +1,14 @@
+:root {
+  --main-color: rgb(64, 201, 64);
+  --font-color: rgb(70, 69, 69);
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 24px;
+  padding: 12px 24px;
+  /* background-color: pink; */
 }
 
 .band_logo {
@@ -25,14 +31,51 @@ header {
 
 .login_list > a {
   font-size: 12px;
-  color: black;
+  color: var(--font-color);
+}
+
+.login_list:nth-child(3) > a {
+  color: white;
 }
 
 .login_list:nth-child(3) {
-  background-color: green;
-  color: white;
+  background-color: var(--main-color);
 }
 
 a {
   text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.band_login_con {
+  display: flex;
+  width: 1000px;
+  height: transparent;
+  gap: 50px;
+}
+
+.mobile_form,
+.mobile_form > img,
+.band_login {
+  width: 100%;
+  height: transparent;
+}
+
+.band_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
 }
