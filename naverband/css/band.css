@@ -223,7 +223,7 @@ h4 {
 .band_mobile_banner {
   display: flex;
   width: 1000px;
-  height: 100px;
+  height: 120px;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -267,5 +267,19 @@ h4 {
 }
 
 .footer_con {
-  height: 100px;
+  height: 120px;
+  background-color: #2a3038;
+}
+
+.footer_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer_li > a {
+  color: var(--font-color);
 }
