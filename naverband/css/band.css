@@ -11,6 +11,10 @@ header {
   background-color: #f6f8fa;
 }
 
+body {
+  font-size: 12px;
+}
+
 .band_logo {
   background: url("../img/spr_intro.png") no-repeat 0 -98px;
   width: 78px;
@@ -59,7 +63,7 @@ section {
 .band_login_con {
   display: flex;
   width: 1000px;
-  height: transparent;
+  height: 600px;
   gap: 50px;
 }
 
@@ -67,7 +71,7 @@ section {
 .mobile_form > img,
 .band_login {
   width: 100%;
-  height: transparent;
+  height: 600px;
 }
 
 .band_login {
@@ -89,6 +93,7 @@ h1 {
   height: 50px;
   text-align: center;
   line-height: 50px;
+  font-size: 16px;
 }
 
 .login_click {
@@ -99,12 +104,6 @@ h1 {
 .join_click {
   background-color: white;
   color: var(--font-color);
-}
-
-.band_login > p {
-  font-size: 20px;
-
-  /* 적용이 안됨 */
 }
 
 /* 뭔가 눈으로 봤을때 가운데 정렬이 안되고 왼쪽으로 살짝 치우친 느낌을 받음 */
@@ -126,6 +125,40 @@ h2 {
   padding-bottom: 32px;
 }
 
+.band_login > p:nth-of-type(1) {
+  font-size: 14px;
+}
+
+.band_login > p > a {
+  text-decoration: underline;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
 .band_explanation > p {
-  font-size: 16px;
+  font-size: 14px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.band_adver_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  height: 400px;
+}
+
+.band_adver {
+  width: 300px;
+  height: 200px;
+}
+
+.band_adver > img {
+  width: 100px;
+  height: 50px;
+}
+
+h3 {
+  font-size: 24px;
 }
