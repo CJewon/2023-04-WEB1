@@ -3,21 +3,25 @@
   --font-color: rgb(70, 69, 69);
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 12px;
+  background-color: #f6f8fa;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background-color: #f6f8fa;
-}
-
-body {
-  font-size: 12px;
-}
-
-img {
-  display: block;
-  width: 100%;
 }
 
 .band_logo {
@@ -43,40 +47,29 @@ img {
   color: var(--font-color);
 }
 
-.login_ul > a > .login_list {
+.login_button {
   background-color: var(--main-color);
-  font-size: 14px;
+}
+
+.login_button > a {
   color: white;
 }
 
-.login_list:nth-child(3) {
-  background-color: var(--main-color);
-}
-
-a {
-  text-decoration: none;
-}
-
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-  background-color: #f6f8fa;
+  padding: 0 32px;
 }
 
 .band_login_con {
+  margin: 0 auto;
   display: flex;
   width: 1000px;
-  height: 600px;
   gap: 50px;
 }
 
 .mobile_form,
 .mobile_form > img,
 .band_login {
-  width: 100%;
-  height: 600px;
+  width: 400px;
 }
 
 .band_login {
@@ -92,13 +85,12 @@ h1 {
   font-weight: 500;
 }
 
-.login_click,
-.join_click {
-  width: 350px;
+.band_login > a {
+  width: inherit;
   height: 50px;
-  text-align: center;
-  line-height: 50px;
   font-size: 16px;
+  line-height: 50px;
+  text-align: center;
 }
 
 .login_click {
@@ -111,13 +103,10 @@ h1 {
   color: var(--font-color);
 }
 
-/* 뭔가 눈으로 봤을때 가운데 정렬이 안되고 왼쪽으로 살짝 치우친 느낌을 받음 */
-
 .band_explanation {
   height: 540px;
   background-image: url(../img/bg_intro.jpg);
-  /* background-position:; */
-  /* background-size: cover; */
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +116,7 @@ h1 {
 h2 {
   font-size: 40px;
   color: white;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .band_login > p:nth-of-type(1) {
@@ -143,7 +132,7 @@ h2 {
 .band_explanation > p {
   font-size: 14px;
   color: white;
-  padding-bottom: 10px;
+  line-height: 1.5;
 }
 
 article {
@@ -194,6 +183,16 @@ h3 {
 
 .choice_list_ul {
   display: flex;
-  flex-wrap: wrap;
   gap: 32px;
+}
+
+.band_list {
+  width: 500px;
+}
+
+.band_list > a {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-direction: column; */
 }
