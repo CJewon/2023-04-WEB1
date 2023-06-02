@@ -1,0 +1,17 @@
+header {
+  background-image: url(../img/main_visual_fullscreen.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 927px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
