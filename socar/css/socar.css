@@ -1,3 +1,16 @@
+:root {
+  --font-color: #aaa;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background-image: url(../img/main_visual_fullscreen.jpg);
   background-position: center;
@@ -14,4 +27,63 @@ h1 {
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
+}
+
+.socar_explanation_con {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.socar_explanation_li {
+  margin: 128px 0;
+}
+
+.socar_explanation_title {
+  display: flex;
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.socar_explanation_title > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.socar_explanation_li > p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+.socar_explanation_li > img {
+  margin: 64px 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  text-align: center;
+  height: 444px;
+}
+
+h2 > span {
+  color: #0bb8ff;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+.mobile_icon {
+  display: flex;
 }
