@@ -9,9 +9,22 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>차가 필요한 <br />모든 순간, 쏘카</h1>
+    <header id="socar-header">
+      <div class="menu_bar">
+        <a href="#">
+          <img src="../socar/img/logo-w.svg" alt="쏘카로고" />
+        </a>
+        <a href="#">
+          <div class="socar_menu">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
     </header>
+    <article>
+      <h1>차가 필요한 <br />모든 순간, 쏘카</h1>
+    </article>
     <main>
       <div class="socar_explanation_con">
         <ul class="socar_explanation_ul">
@@ -67,14 +80,23 @@
         <span>8,796,684</span>명의 회원이 쏘카와<br />함께하고 있습니다<br />지금
         바로 <span>쏘카 드라이브</span>를<br />시작하세요.
       </h2>
+      <div class="skeu_sq"></div>
     </section>
     <footer>
       <div class="footer_con">
         <div class="mobile_icon">
-          <img src="../socar/img/i-instagram.svg" alt="인스타그램" />
-          <img src="../socar/img/i-facebook.svg" alt="페이스북" />
-          <img src="../socar/img/i-youtube.svg" alt="유튜브" />
-          <img src="../socar/img/i-blog.svg" alt="블로그" />
+          <a href="#">
+            <img src="../socar/img/i-instagram.svg" alt="인스타그램" />
+          </a>
+          <a href="#">
+            <img src="../socar/img/i-facebook.svg" alt="페이스북" />
+          </a>
+          <a href="#">
+            <img src="../socar/img/i-youtube.svg" alt="유튜브" />
+          </a>
+          <a href="#">
+            <img src="../socar/img/i-blog.svg" alt="블로그" />
+          </a>
         </div>
         <ul class="footer_ul">
           <li class="footer_li">
@@ -121,14 +143,37 @@
           </div>
         </div>
       </div>
-      <div class="socar_app_con">
-        <div class="socar_app_download">
-          <a href="#">
-            <img src="../socar/img/i-appicon.svg" alt="앱아이콘" />
-            쏘카 앱 다운로드 ↓
-          </a>
-        </div>
-      </div>
     </footer>
+    <div class="socar_app_download">
+      <a href="#">
+        <img src="../socar/img/i-appicon.svg" alt="앱아이콘" />
+        <p>쏘카 앱 다운로드 ↓</p>
+      </a>
+    </div>
+
+    <script>
+      const header = document.getElementById("socar-header");
+      header.style.position = "fixed";
+      header.style.top = "0";
+      header.style.width = "100%";
+      header.style.transition = "0.5s";
+      header.style.backgroundColor = "transparent";
+
+      let beforeScroll = 0;
+      window.addEventListener("scroll", () => {
+        if (beforeScroll < window.scrollY) {
+          header.style.transform = "translateY(-100%)";
+        } else {
+          header.style.transform = "none";
+        }
+        beforeScroll = window.scrollY;
+
+        if (window.scrollY < 100) {
+          header.style.backgroundColor = "transparent";
+        } else {
+          header.style.backgroundColor = "#FFFFFF80";
+        }
+      });
+    </script>
   </body>
 </html>

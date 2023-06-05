@@ -1,5 +1,6 @@
 :root {
   --font-color: #aaa;
+  --sq-color: rgba(0, 184, 255, 1);
 }
 
 img {
@@ -12,13 +13,44 @@ a {
 }
 
 header {
+  padding: 10px 40px;
+}
+
+.menu_bar > a {
+  position: relative;
+}
+
+.menu_bar img {
+  width: 100px;
+  height: 35px;
+}
+
+.socar_menu {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  width: 36px;
+  height: 14px;
+  cursor: pointer;
+  z-index: 100;
+  transform: translate(0%, -50%);
+}
+
+.socar_menu > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #0bb8ff;
+}
+
+article {
   background-image: url(../img/main_visual_fullscreen.jpg);
   background-position: center;
   background-size: cover;
-  height: 927px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 927px;
 }
 
 h1 {
@@ -36,12 +68,13 @@ h1 {
 }
 
 .socar_explanation_li {
-  margin: 128px 0;
+  padding-top: 64px;
 }
 
 .socar_explanation_title {
   display: flex;
   margin: 32px 0;
+  align-items: flex-end;
 }
 
 h2 {
@@ -74,21 +107,34 @@ section {
   line-height: 1.5;
   text-align: center;
   height: 444px;
+  background-color: #f7f8f9;
+  overflow: hidden;
 }
 
 h2 > span {
   color: #0bb8ff;
 }
 
+.skeu_sq {
+  width: 100px;
+  height: 100%;
+  background-color: var(--sq-color);
+}
+
 footer {
   margin: 0 auto;
   background-color: #28323c;
+  overflow: hidden;
 }
 
 .footer_con {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
   margin: 0 auto;
   width: 1000px;
-  padding: 40px;
+  padding: 30px;
 }
 
 .mobile_icon {
@@ -96,14 +142,14 @@ footer {
   gap: 10px;
 }
 
-.mobile_icon > img {
+.mobile_icon img {
   width: 30px;
   height: 30px;
 }
 
 .footer_ul {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .footer_li > a {
@@ -118,4 +164,34 @@ footer {
 .socar_information_con {
   display: flex;
   justify-content: space-between;
+}
+
+.socar_information > p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--font-color);
+}
+
+.socar_app_download {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  position: fixed;
+  z-index: 100;
+}
+
+.socar_app_download img {
+  width: 70px;
+  height: 70px;
+}
+
+.socar_app_download > a {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #0bb8ff;
+}
+
+.socar_app_download > a > p {
+  color: white;
 }
