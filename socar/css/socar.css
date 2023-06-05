@@ -82,8 +82,40 @@ h2 > span {
 
 footer {
   margin: 0 auto;
+  background-color: #28323c;
+}
+
+.footer_con {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 40px;
 }
 
 .mobile_icon {
   display: flex;
+  gap: 10px;
+}
+
+.mobile_icon > img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer_ul {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_li > a {
+  font-size: 14px;
+  color: #c5c8ce;
+}
+
+.li_important > a {
+  color: white;
+}
+
+.socar_information_con {
+  display: flex;
+  justify-content: space-between;
 }
