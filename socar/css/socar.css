@@ -78,6 +78,8 @@ h1 {
 }
 
 h2 {
+  /* margin: 0 auto; */
+  /* text-align: center; */
   font-size: 40px;
   font-weight: bold;
 }
@@ -104,18 +106,26 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* width: 100%; */
   line-height: 1.5;
   text-align: center;
   height: 444px;
   background-color: #f7f8f9;
   overflow: hidden;
+  position: relative;
 }
 
 h2 > span {
+  /* margin: 0 auto; */
+  /* text-align: center; */
   color: #0bb8ff;
 }
 
 .skeu_sq {
+  /* margin: 0 auto; */
+  position: fixed;
   width: 100px;
   height: 100%;
   background-color: var(--sq-color);
